@@ -1,0 +1,51 @@
+h1 {
+  text-align: center;
+  color: grey;
+}
+.game {
+  /* display: flex;
+  flex-direction: row; */
+  margin-left: 20px;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+}
+.square {
+  border: 1px solid grey;
+  background: white;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  margin-left: -1px; /* 左マージンからの距離 */
+  margin-top: -1px; /* 上マージンからの距離 */
+  padding: 0; /*周りのスペースの距離 */
+  float: left;
+}
+/* float:1eftの解除 */
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.status {
+  color: blue;
+  font-size: 30px;
+}
+.game-board {
+  left: 0;
+}
+.game-info {
+  right: 0;
+}
+.left-side {
+  position: absolute;
+  left: 60%;
+}
+.right-side {
+  position: absolute;
+  right: 70%;
+}
+.result {
+  color: red;
+}
